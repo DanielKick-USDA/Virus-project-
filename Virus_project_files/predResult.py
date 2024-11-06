@@ -88,7 +88,7 @@ for ll in range(len(lengths)):
     X = data.iloc[:,1:(data.shape[1] - 1)]#get fearture
     y = data.iloc[:,data.shape[1] - 1]#get label
     #print(y)
-    del data
+    #del data
     X_train = np.array(X_train)
     y_train = np.array(y_train)
     print(len(X_train))
