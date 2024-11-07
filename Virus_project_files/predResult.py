@@ -1,23 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""
-Created on Tue Jun 25 20:13:34 2019
 
-@author: FinalZ
-"""
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
-"""
-Created on Tue Jun 25 20:13:34 2019
-
-@author: FinalZ
-"""
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
-"""
-Created on Tue Jun 25 20:13:34 2019
-@author: FinalZ
-"""
 
 from calculate_genotype_k_mer import queryKmer
 import pandas as pd
@@ -105,9 +88,9 @@ for ll in range(len(lengths)):
     X = data.iloc[:,1:(data.shape[1] - 1)]#get fearture
     y = data.iloc[:,data.shape[1] - 1]#get label
     #print(y)
-    del data
-    X_train = np.array(X)
-    y_train = np.array(y)
+    #del data
+    X_train = np.array(X_train)
+    y_train = np.array(y_train)
     print(len(X_train))
     del X,y#clear useless variable, Free memory
     
